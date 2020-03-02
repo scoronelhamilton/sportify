@@ -1,0 +1,25 @@
+{
+  "name": "sportify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index",
+    "start-dev": "nodemon server/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoronelhamilton/sportify.git"
+  },
+  "author": "Sebastian Coronel Hamilton",
+  "license": "ISC",
+  "homepage": "https://github.com/scoronelhamilton/sportify#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
