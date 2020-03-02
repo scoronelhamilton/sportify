@@ -7,9 +7,6 @@ exports.getAll = () =>
       throw new Error(err);
     });
 
-exports.add = info =>
-  Athlete.create(info).catch(err => {
-    throw new Error(err);
-  });
+exports.add = info => Athlete.create(info);
 
 exports.update = (id, info) => Athlete.updateOne({ _id: id }, info);
