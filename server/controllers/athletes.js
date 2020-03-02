@@ -11,7 +11,7 @@ exports.getAll = (req, res) => {
 };
 
 exports.add = (req, res) => {
-  const { info } = req.body;
+  const info = req.body;
   if (!info) return res.sendStatus(404);
 
   athleteModel
@@ -25,7 +25,7 @@ exports.add = (req, res) => {
 
 exports.update = (req, res) => {
   const { id } = req.params;
-  const { info } = req.body;
+  const info = req.body;
   if (!id || !info) return res.sendStatus(404);
 
   athleteModel
